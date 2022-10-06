@@ -8,17 +8,21 @@ html {
 }
 
 
-/* body {
-    min-height: 100vh;
-} */
+body {
+    color: black;
+    font-family:  arial,sans-serif;
+}
 
 .header {
+    color: black;
     margin-right: 5px;
     font-size: 14px;
     display: flex;
     justify-content: end;
     column-gap: 18px;
     margin-bottom: 10px;
+    transition: box-shadow 250ms;
+
 }
 
 .header p {
@@ -35,24 +39,24 @@ html {
     width: 30px;
     height: 30px;
     margin-top: 7px;
-    border-radius: 80%;
+    border-radius: 100%;
     cursor: pointer;
 }
 
 .login:hover{
     box-shadow: 1px 1px 4px 1px #5f6368;
     opacity: 1;
-    background: #f2f2f2;
+    background-color: #7e7070;
 
 }
 
 .pic {
-    margin-top: -40px;
-    margin: 0 auto;
+    /* margin-top: -35px; */
+    margin: 0px auto;
     width: 300px;
     height: 100px;
     cursor: pointer;
-    margin-bottom: 15px;
+    /* margin-bottom: 10px; */
 }
 
 .bar {
@@ -73,27 +77,33 @@ html {
 }
 
 .searchbar {
-    height: 45px;
+    height: 37px;
     border: none;
-    width: 500px;
+    width: 510px;
     font-size: 16px;
     outline: none;
 }
 
 .voice {
-    height: 16px;
+    height: 50px;
     position: relative;
-    top: 3px;
+    top: 5px;
     right: 5px;
 }
 
 .bar img {
-    width: 16px;
-    height: 16px;
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    margin-top: 13px;
+    margin-left: 15px;
+        
 }
-
+.bar a img{
+    image-resolution: initial;
+    height: 19px;
+    width: 14px;
+    margin-left: -10px;
+}
 
 /* .search {
     margin-top: 160px;
@@ -112,10 +122,10 @@ html {
 }
      */
 
-.mic {
+/* .mic {
     float: right;
     padding: 2px;
-}
+} */
 
 .buttons {
     margin-top: 20px;
@@ -157,7 +167,7 @@ button:hover {
 
 .pak {
     font-size: 16px;
-    color: #70757a;
+    color: #28292b;
     margin-left: 26px;
     border-bottom: 1px solid #dadce0;
 }
@@ -227,7 +237,11 @@ footer li:hover {
         border: 1px solid #dcdcdc;
     }
     .bar img {
+        margin-right: 15px;
+    }
+    .bar  a img{
         margin-left: 15px;
+        margin-top: 12px;
     }
     footer {
         background: none;
@@ -258,7 +272,7 @@ footer li:hover {
         font-size: 12px;
     }
     .searchbar {
-        height: 45px;
+        height: 35px;
         border: none;
         width: 200px;
         font-size: 16px;
@@ -270,7 +284,7 @@ footer li:hover {
         border-radius: 30px;
     }
     .bar a img {
-        margin-right: 2px;
+        margin-right: 10px;
     }
     .pic img {
         margin-bottom: -50px;
@@ -300,6 +314,9 @@ footer li:hover {
             margin: 0 auto;
             width: 265px;
             border-radius: 30px;
+        }
+        .bar img{
+            margin-bottom: 7px;
         }
         .pic img {
             width: 130px;
